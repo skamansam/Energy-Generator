@@ -3,7 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Energy Generator</title>
+    <meta name="description" content="Energy Generator"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="styles/style.css" rel="stylesheet" type="text/css"/>
+		<link href="styles/mobile.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body>
 		<div id="header">
@@ -30,7 +33,7 @@
 						<button onclick="showPanel(3, '#4b6eb1', true)" id="topTab4" class="tabButton realityTabs">Reality</button>
 						<button onclick="showPanel(4, '#9c3386', true)" id="topTab5" class="tabButton autoTabs">Autobuyers</button>
 						<button onclick="showPanel(5, '#5f38a7', true)" id="topTab6" class="tabButton extraTabs">Extra</button>
-						<!-- 
+						<!--
 						<button onclick="showPanel(0, '#3f5a4f')" id="tab1" class="baseTabs">Generators</button>
 						<button onclick="showPanel(1, '#a1a102')" id="tab2" class="expansionTabs">Expansion Generators</button>
 						<button onclick="showPanel(2, '#a1a102')" id="tab3" class="expansionTabs">Expansion Upgrades</button>
@@ -85,11 +88,11 @@
 				</div>
 			</div>
 		</div>
-		
-		<div id="wrapper">		
+
+		<div id="wrapper">
 			<div class="grid-container tabPanel pagePanel" id="generators">
 				<div class="grid-item" id="allMultButton" onclick="buyAllMult()"></div>
-				
+
 				<div class="grid-item" id="firstGenerator" onclick="buyGenerator(1)"></div>
 				<div class="grid-item" id="secondGenerator" onclick="buyGenerator(2)"></div>
 				<div class="grid-item" id="thirdGenerator" onclick="buyGenerator(3)"></div>
@@ -98,7 +101,7 @@
 				<div class="grid-item" id="sixthGenerator" onclick="buyGenerator(6)"></div>
 				<div class="grid-item" id="seventhGenerator" onclick="buyGenerator(7)"></div>
 				<div class="grid-item" id="eighthGenerator" onclick="buyGenerator(8)"></div>
-				
+
 				<div class="grid-item prestige" id="firstGeneratorPrestige" onclick="prestige(1)"></div>
 				<div class="grid-item prestige" id="secondGeneratorPrestige" onclick="prestige(2)"></div>
 				<div class="grid-item prestige" id="thirdGeneratorPrestige" onclick="prestige(3)"></div>
@@ -114,7 +117,7 @@
 
 			<!-- END OF NORMAL PAGES -->
 			<!-- START OF EXPANSION PAGES -->
-			
+
 			<div id="expand" class="tabPanel pagePanel">
 				<div id="preExpansionText">You need 1e308 Energy</div>
 				<div class="grid-container-expand" id="expansionGenerators">
@@ -813,7 +816,7 @@
 				<div id="autobuyerContainer">
 					<div class="autobuyer" id="autoPrestige">
 						<div>Prestige Autobuyer</div>
-						<input type="checkbox" id="autoPrestigeCheck" class="autoCheck">				
+						<input type="checkbox" id="autoPrestigeCheck" class="autoCheck">
 					</div>
 					<div class="autobuyer" id="autoGenerator">
 						<div>Generator Autobuyer</div>
@@ -930,7 +933,7 @@
 				</a>
 				<div id="infoText"></div>
 			</div>
-			
+
 			<div class="pagePanel" id="exportImportTab">
 				<textarea id="importExportText"></textarea>
 				<div id="exportImportContainer">
@@ -944,8 +947,8 @@
 
 		</div>
 
-			
-		
+
+
 		<!--
 		<button onclick="test()">Test</button>
 		<button onclick="save()">Save</button>
@@ -953,8 +956,8 @@
 		<button onclick="maxAll()">Max</button>
 		<button onclick="hardReset()">Reset</button>
 		-->
-		
-		
+
+
 	</body>
 	<script type="text/javascript" src="scripts/break_eternity.js"></script>
 	<script type="text/javascript" src="scripts/main.js"></script>
